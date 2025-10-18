@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <input type="text" placeholder="Enter 1st number" id="num1"><br> 
+    <input type="text" placeholder="Enter 2nd number" id="num2"><br>
+    <input type="button" value="click here " onclick="funadd()" >
+
+    <input type="text" id="result" ><br>
+    <script>
+        const funadd=() => { 
+            fn= document.getElementById("num1").value;
+            sn= document.getElementById("num2").value;
+            console.log(parseInt(fn)+parseInt(sn));
+            document.getElementById("result").value=parseInt(fn)+parseInt(sn);
+            //console.log(a+b);
+        }
+
+      
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <script>
+        //Object literal
+        let Student=
+        {
+            name:"Akash",
+            marks:85,
+            grade:'A'
+
+        };
+        console.log(Student.name,Student.marks,Student.grade);
+
+
+            //Array of objects
+        let Students=[
+            {name:"Akash",marks:85,grade:'A'},
+            {name:"Bhanu",marks:75,grade:'B'},
+            {name:"Chetan",marks:65,grade:'C'}
+        ];
+        console.log(Students[0].name,Students[1].marks,Students[2].grade);
+        console.log(Students[1]);
+
+
+        //Creating object using Object()
+        let Student1=new Object();
+        Student1.name=["Dhoni","Sachin","Rohit"];
+        Student1.usn=["19csu001","19csu002","19csu003"];
+        Student1.phone=[9876543210,8765432109,7654321098];
+        
+        console.log("New Student Details:");
+        for(i=0;i<Student1.name.length;i++){
+            console.log(Student1.name[i],Student1.usn[i],Student1.phone[i]);
+        }
+
+        //for each
+        names=["Anu","Bhuvi","Chitra"];
+        names.forEach((name,index)=>{
+            console.log(index,name);
+        });
+
+
+        
+    </script>
+</body>
+</html>

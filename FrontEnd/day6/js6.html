@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //var vs let vs const
+       let a;
+       console.log(a);
+       a=7;
+       console.log(a);
+
+        //function with rest operator
+       function addAll(...numbers){
+        let sum =0;
+       numbers.forEach(num =>{
+            sum+=num;
+            
+       });
+       console.log("Sum is:"+sum);
+
+        }
+       addAll(2,3,4,5,6);
+       addAll(10,20,30);
+       addAll(15,25,37,45,60);
+
+    //spread operator
+       name='SUMA';
+       nameArray=[...name];
+       console.log(nameArray);
+
+    </script>
+    
+</body>
+</html>

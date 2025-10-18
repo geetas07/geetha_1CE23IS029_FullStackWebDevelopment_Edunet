@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        
+        <input type="text" id="tbphone" placeholder="Enter phone number">
+
+        <input type="button" value="Submit" onclick="validatePhoneNumber">
+    </form>
+
+    <script>
+        //phone number validation
+    function validatePhoneNumber(){
+        const phoneInput = document.getElementById('tbphone');
+        const phoneNumber = phoneInput.value;
+        const phonePattern = /^[6-9]{1}[0-9]{9}$/; // Regex pattern for 10 digit phone
+
+        if(!phonePattern.test(phoneNumber)){
+            alert('Please enter a valid 10-digit phone number.');
+            phoneInput.focus();
+            return false;
+        }
+        alert('Phone number is valid.');
+        return true;
+       }
+    </script>
+</body>
+</html>

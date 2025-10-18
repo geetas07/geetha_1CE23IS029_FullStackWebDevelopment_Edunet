@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  id="name" required placeholder="Enter Name"><br>
+    <input type="submit" value="Submit" onclick="Validdateform()">
+</body>
+<script>
+    //form validation
+    function Validdateform(){
+        const nameInput =document.getElementById("name");
+        const name = nameInput.value;
+        const namePattern=/^[A-Z][a-z A-Z]{3-15}$/;
+
+        if(!namePattern.test(name)){
+            alert("Name must be filled out");
+            nameInput.focus();
+            return false;
+        }
+        alert("Form submitted successfully");
+        return true;
+    }
+    </script>
+
+</html>
